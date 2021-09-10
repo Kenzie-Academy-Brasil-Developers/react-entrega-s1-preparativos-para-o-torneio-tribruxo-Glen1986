@@ -8,6 +8,7 @@ const CardStudent = ({ char: { id, name, image, house, patronus, species}}) =>{
       <img className ="picture" src={image} alt={name} />
       <label>Patron: {patronus}</label>
       <lebel>Specie: {species}</lebel>
+
     </div>
   )
 
