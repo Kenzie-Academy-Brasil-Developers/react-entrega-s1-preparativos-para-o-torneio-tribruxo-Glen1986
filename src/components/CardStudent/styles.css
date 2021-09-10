@@ -1,0 +1,9 @@
+.card{
+  display:flex;
+  flex-direction: column;
+  border:2px solid gray;
+}
+.picture{
+  height:20rem;
+  width:15rem;
+}
