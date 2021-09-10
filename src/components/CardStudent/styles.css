@@ -2,8 +2,15 @@
   display:flex;
   flex-direction: column;
   border:2px solid gray;
+  border-radius:15px;
 }
 .picture{
   height:20rem;
   width:15rem;
+  margin: 0 auto;
+}
+@media (min-width:760px){
+  .card{
+
+}
 }
