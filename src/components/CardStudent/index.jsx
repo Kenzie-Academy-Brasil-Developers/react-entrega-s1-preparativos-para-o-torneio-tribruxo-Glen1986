@@ -1,5 +1,5 @@
 import './styles.css'
-const CardStudent = ({ char: { id, name, image, house, patronus, species}}) =>{
+const CardStudent = ({ char: { Filtrar, id, name, image, house, patronus, species}}) =>{
 
   return(
     <div className ="card">

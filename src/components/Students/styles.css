@@ -3,4 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   width:80vw;
+  margin: 0 auto;
+  border: none;
+  justify-content: space-evenly;
   }
