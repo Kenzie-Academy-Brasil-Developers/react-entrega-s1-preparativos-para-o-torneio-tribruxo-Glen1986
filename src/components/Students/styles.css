@@ -1,14 +1,12 @@
 .container{
 
-  display:flex;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:80vw;
+  margin: 0 auto;
+  border: none;
+  justify-content: space-evenly;
 
-}
-
-@media (min-width: 760px){
-  .container{
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
   }
-}
+
