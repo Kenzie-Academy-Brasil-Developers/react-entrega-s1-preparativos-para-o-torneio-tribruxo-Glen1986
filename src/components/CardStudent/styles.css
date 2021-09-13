@@ -2,10 +2,18 @@
 .card{
   display:flex;
   flex-direction: column;
-  border:2px solid gray;
 }
 
 .picture{
   height:20rem;
   width:15rem;
+}
+.card:nth-child(1){
+   border:2px solid green;
+}
+.card:nth-child(2){
+   border:2px solid yellow;
+}
+.card:nth-child(3){
+   border:2px solid red;
 }
