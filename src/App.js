@@ -14,27 +14,24 @@ function App() {
   }, []);
 
   const theChamps = () => {
-    var escolhidos = [];
-    //first sorcerer
+    let chosen = [];
     const randomPerson1 = Math.floor(Math.random() * students.length);
-    escolhidos.push(students[randomPerson1]);
+    chosen.push(students[randomPerson1]);
     const filterToDifferentPerson1 = students.filter(
-      (student) => student.house !== escolhidos[0].house
+      (student) => student.house !== chosen[0].house
     );
-    //second sorcerer
     const randomPerson2 = Math.floor(
       Math.random() * filterToDifferentPerson1.length
     );
-    escolhidos.push(filterToDifferentPerson1[randomPerson2]);
+    chosen.push(filterToDifferentPerson1[randomPerson2]);
     const filterToDifferentPerson2 = filterToDifferentPerson1.filter(
-      (student) => student.house !== escolhidos[1].house
+      (student) => student.house !== chosen[1].house
     );
-    //third sorcerer
     const randomPerson3 = Math.floor(
       Math.random() * filterToDifferentPerson2.length
     );
-    escolhidos.push(filterToDifferentPerson2[randomPerson3]);
-    setTheChosen(escolhidos);
+    chosen.push(filterToDifferentPerson2[randomPerson3]);
+    setTheChosen(chosen);
   };
 
   return (
